@@ -13,11 +13,8 @@ import java.io.File;
 @Controller
 public class EmployeeController {
 
-    private final EmployeeService employeeService;
-
-    public EmployeeController(EmployeeService employeeService){
-        this.employeeService = employeeService;
-    }
+    @Inject
+    private EmployeeService employeeService;
 
     @Post(value = "/upload",consumes = MediaType.MULTIPART_FORM_DATA)
     public HttpResponse<String> addDataToSql(@Body CompletedFileUpload file){
