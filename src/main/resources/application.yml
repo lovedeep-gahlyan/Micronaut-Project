@@ -1,0 +1,10 @@
+micronaut:
+  application:
+    name: excelToSql
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/exceldb
+    username: root
+    password: lovedeep
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    db-type: mysql

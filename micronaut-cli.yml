@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.lovedeep.task
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [annotation-api, app-name, http-client, jackson-databind, java, java-application, jdbc-hikari, jetty-server, junit, logback, maven, mysql, readme, shade, test-resources, yaml]
